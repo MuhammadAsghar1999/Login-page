@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js";></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form>
+    <h1>Login</h1>
+    <input type="text" placeholder="Enter Email">
+    <datalist id="teech">
+    </datalist>
+    <input type="password" placeholder="Enter Password">
+    <br>
+    <a onclick="forgotPassword()" href="#">Forgot Password</a>
+    <br>
+    <br>
+    <button onclick="login()" type="submit">Login</button>
+    <br>
+    <br>
+    <a onclick="loginWithGoogle()" href="#"> <i class="fa-brands fa-google fa-4"></i></a>
+    <a onclick="loginWithGithub()" href="#"> <i  class="fa-brands fa-github"></i></a>
+    
+    <br>
+    <br>
+    <p>Don't have an account? <a href="Signup.html">Signin</a></p> 
+    <br>
+    <br>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
